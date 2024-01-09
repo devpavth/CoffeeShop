@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive coffee shop</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <a href="#" class="logo">
+            <img src="images/images.jpg" alt="">
+        </a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#products">products</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>   
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/cards/coffee-1399801_1280.jpg" alt="">
+                <div class="content">
+                    <h3>cart item 01</h3>
+                    <div class="price">$15.99/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/cards/coffee-6632524_1280.jpg" alt="">
+                <div class="content">
+                    <h3>cart item 02</h3>
+                    <div class="price">$15.99/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/cards/coffee-8066888_1280.jpg" alt="">
+                <div class="content">
+                    <h3>cart item 03</h3>
+                    <div class="price">$15.99/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/cards/raw-coffee-927604_1280.jpg" alt="">
+                <div class="content">
+                    <h3>cart item 04</h3>
+                    <div class="price">$15.99/-</div>
+                </div>
+            </div>
+            <div class="total">total : $63.96/-</div>
+            <a href="#" class="btn">checkout now</a>
+        </div>
+    </div>
+    <div class="section">
+        <div class="home" id="home">
+            <!-- <div class="backgrounds-container">
+                <img class="background" src="bg/pexels-andrea-piacquadio-3783527.jpg" alt="">
+                <img class="background" src="bg/coffee-4388065_1280.jpg" alt="">
+                <img class="background" src="bg/fresh-coffee-steams-wooden-table-close-up-generative-ai.jpg" alt="">
+                <img class="showing background" src="bg/top-view-cup-coffee-with-roasted-beans/3376542.jpg" alt="">
+                <img class="showing background" src="bg/top-view-cup-coffee-with-roasted-beans/3376542.jpg" alt="">
+                <img class="showing background" src="bg/top-view-cup-coffee-with-roasted-beans/3376542.jpg" alt="">
+            </div> -->
+            <div class="content">
+                <h3>Rise and Shine with Your <span>Perfect Cup of Coff</span><span class="unique">ee</span></h3>
+                <p>Experience the art of brewing perfected at Coffee Time, 
+                where each sip sparks joy and satisfaction.</p>
+                <a href="#" class="btn">Get yours now</a>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="about" id="about">
+            <h1 class="heading"><span>about</span> us </h1>
+            <div class="row" data-aos="fade-left">
+                <div class="image">
+                    <img src="images/pics/coffee-5966013_1280.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>what makes our coffee special?</h3>
+                    <p><b>Carefully Selected Beans:</b> We meticulously source our beans, focusing on quality, sustainability, and ethical practices.</p>
+                    <p><b>Expert Roasting Techniques:</b> Utilizing artisanal roasting methods, we bring out the unique flavors and aromas inherent in each bean.</p>
+                    <p><b>Crafted to Perfection:</b> Our dedication to the art of coffee crafting ensures every cup delivers a rich, flavorful experience that's consistently satisfying.</p>
+                    <p><b>Passionate Precision:</b> We pour our passion into every step, from selecting the beans to the final brewing process, ensuring an exceptional cup each time.</p>
+                    <p><b>Freshness Guaranteed:</b> Roasting in small batches to maintain freshness, delivering coffee at its peak flavor.</p>
+                    <p><b>Commitment to Taste:</b> The result is a cup that transcends ordinary coffee, offering a complex and enjoyable experience that stands out.</p>
+                    <a href="#" class="btn">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="menu" id="menu">
+            <h1 class="heading"> our <span>menu</span></h1>
+            <div class="box-container" data-aos="fade-right">
+                <div class="box">
+                    <img src="images/menu/ukraine-flag-7068465_1280.jpg" alt="">
+                    <h3>Complex, balanced, and deeply satisfying taste.</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">Add to cart</a>
+                </div>
+                <div class="box">
+                    <img src="images/menu/top-view-cup-coffee.jpg" alt="">
+                    <h3>Complex, balanced, and deeply satisfying taste.</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">Add to cart</a>
+                </div>
+                <div class="box">
+                    <img src="images/menu/cappuccino-756490_1280.jpg" alt="">
+                    <h3>Complex, balanced, and deeply satisfying taste.</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">Add to cart</a>
+                </div>
+                <div class="box">
+                    <img src="images/menu/top-view-cup-coffee-with-floral-shape.jpg" alt="">
+                    <h3>Complex, balanced, and deeply satisfying taste.</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">Add to cart</a>
+                </div>
+                <div class="box">
+                    <img src="images/menu/cup-coffee-with-drawn-heart.jpg" alt="">
+                    <h3>Complex, balanced, and deeply satisfying taste.</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">Add to cart</a>
+                </div>
+                <div class="box">
+                    <img src="images/menu/cup-5972329_1280.jpg" alt="">
+                    <h3>Complex, balanced, and deeply satisfying taste.</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="products" id="products">
+            <h1 class="heading"> our <span>Products</span></h1>
+            <div class="box-container" data-aos="fade-left">
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="images/products/PngItem_2365969.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Fresh coffee</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price">$15.99 <span>$20.99</span></div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="images/products/PngItem_5579383.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Fresh coffee</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price">$15.99 <span>$20.99</span></div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="images/products/PngItem_2843710.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Fresh coffee</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price">$15.99 <span>$20.99</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="review" id="review">
+            <h1 class="heading"> customer's <span>review</span></h1>
+            <div class="box-container" data-aos="fade-right">
+                <div class="box">
+                    <!-- <img src="images/products/images.jpg" alt="" class="quote"> -->
+                    <img src="images/blogs/casual-red-head-woman-sitting-grass-park.jpg" alt="" class="user">
+                    <h3>Valentina</h3>
+                    <h5>Web designer</h5>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque necessitatibus placeat ipsa ducimus itaque rem sequi? Reprehenderit, hic nulla quas nobis eius enim cum. Labore.</p>
+                </div>
+                <div class="box">
+                    <!-- <img src="images/products/images.jpg" alt="" class="quote"> -->
+                    <img src="images/blogs/handsome-cheerful-smiling-young-man-sitting-table-open-air-cafe-with-cup-coffee.jpg" alt="" class="user">
+                    <h3>Valentina</h3>
+                    <h5>Web designer</h5>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque necessitatibus placeat ipsa ducimus itaque rem sequi? Reprehenderit, hic nulla quas nobis eius enim cum. Labore.</p>
+                </div>
+                <div class="box">
+                    <!-- <img src="images/products/images.jpg" alt="" class="quote"> -->
+                    <img src="images/blogs/smiling-girl-great-mood-shot-model-with-brown-eyes-bright-knitted-sweater-hat-gray-wall.jpg" alt="" class="user">
+                    <h3>Valentina</h3>
+                    <h5>Web designer</h5>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque necessitatibus placeat ipsa ducimus itaque rem sequi? Reprehenderit, hic nulla quas nobis eius enim cum. Labore.</p>
+                </div>
+                <div class="box">
+                    <!-- <img src="images/products/images.jpg" alt="" class="quote"> -->
+                    <img src="images/blogs/medium-shot-smiley-man-outside.jpg" alt="" class="user">
+                    <h3>Valentina</h3>
+                    <h5>Web designer</h5>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque necessitatibus placeat ipsa ducimus itaque rem sequi? Reprehenderit, hic nulla quas nobis eius enim cum. Labore.</p>
+                </div>
+                <div class="box">
+                    <!-- <img src="images/products/images.jpg" alt="" class="quote"> -->
+                    <img src="images/blogs/woman-portrait-walking-street.jpg" alt="" class="user">
+                    <h3>Valentina</h3>
+                    <h5>Web designer</h5>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque necessitatibus placeat ipsa ducimus itaque rem sequi? Reprehenderit, hic nulla quas nobis eius enim cum. Labore.</p>
+                </div>
+                <div class="box">
+                    <!-- <img src="images/products/images.jpg" alt="" class="quote"> -->
+                    <img src="images/blogs/outdoor-autumn-fashion-portrait-graceful-smiling-young-woman-cozy-warm-knitted-pullover-cute-lady-sitting-cafe-drink-coffee.jpg" alt="" class="user">
+                    <h3>Valentina</h3>
+                    <h5>Web designer</h5>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque necessitatibus placeat ipsa ducimus itaque rem sequi? Reprehenderit, hic nulla quas nobis eius enim cum. Labore.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="contact" id="contact">
+            <h1 class="heading"> <span>contact</span> us </h1>
+            <div class="row" data-aos="fade-down">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15076.89777963414!2d72.83042475783775!3d19.14165021322147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1699281940446!5m2!1sen!2sin" 
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <form action="">
+                    <h3>Get in Touch</h3>
+                    <div class="inputBox">
+                        <span class="fas fa-user"></span>
+                        <input type="text" placeholder="name">
+                    </div>
+                    <div class="inputBox">
+                        <span class="fas fa-envelope"></span>
+                        <input type="email" placeholder="email">
+                    </div>
+                    <div class="inputBox">
+                        <span class="fas fa-phone"></span>
+                        <input type="tel" placeholder="number">
+                    </div>
+                    <input type="submit" class="btn" value="contact now">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="blogs" id="blogs">
+            <h1 class="heading"> our <span>blogs</span></h1>
+            <div class="box-container" data-aos="fade-left">
+                <div class="box">
+                    <div class="image">
+                        <img src="images/blogging/caffeine-1867326_1280.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="title">tasty and refreshing coffee</a>
+                        <span>by admin / 21st may, 2021</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quo.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="images/blogging/breakfast-1870009_1280.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="title">tasty and refreshing coffee</a>
+                        <span>by admin / 21st may, 2021</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quo.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="images/blogging/latte-macchiato-3669136_1280.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="title">tasty and refreshing coffee</a>
+                        <span>by admin / 21st may, 2021</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quo.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="images/blogging/drink-1839134_1280.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="title">tasty and refreshing coffee</a>
+                        <span>by admin / 21st may, 2021</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quo.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="images/blogging/coffee-3120750_1280.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="title">tasty and refreshing coffee</a>
+                        <span>by admin / 21st may, 2021</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quo.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="images/blogging/coffee-7897414_1280.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="title">tasty and refreshing coffee</a>
+                        <span>by admin / 21st may, 2021</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quo.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="footer">
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-pinterest"></a>
+            </div>
+            <div class="links">
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#menu">menu</a>
+                <a href="#products">products</a>
+                <a href="#review">review</a>
+                <a href="#contact">contact</a>
+                <a href="#blogs">blogs</a>
+            </div>
+            <div class="credit">created by <span>mr. scroop designer</span> | all rights reserved</div>
+        </div>
+    </div>
+
+<!-- ----------Animate on Scroll(AOS) -------------->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:320,
+        duration:1000
+      });
+    </script>
+    
+<script src="script.js"></script>
+</body>
+</html>
